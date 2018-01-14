@@ -17,14 +17,17 @@ namespace TaskBook
             book2.Title = "xxx";
             book2.Id = 1;
 
-            Console.WriteLine(newBook.CompareBook(book2));
+            Book book3 = new Book("Testi","Masa", 100, 29.00);
 
-            if (newBook.IsExpensier(book2))
+            Console.WriteLine(book2.CompareBook(book3));
+            Console.WriteLine(book3.ToString());
+            /*if (newBook.IsExpensier(book2))
                 Console.WriteLine($"{newBook.Title} on kallimpi kuin {book2.Title} kirja");
             else
             {
                 Console.WriteLine($"{book2.Title} on kallimpi kuin {newBook.Title} kirja");
             }
+            */
             Console.ReadKey();
 
         }

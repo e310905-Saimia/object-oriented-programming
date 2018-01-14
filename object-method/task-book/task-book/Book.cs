@@ -30,12 +30,12 @@ namespace TaskBook
             Price = price;
         }
 
-        public string CompareBook(Book book)
+        public string CompareBook(Book bk)
         {    
-            if (this.Price > book.Price)
-                return $"{this.Title} on kalliimpi kuin {book.Title} kirja";
-            else
-                return $"{book.Title} on kalliimpi kuin {this.Title} kirja";
+            if (Price > bk.Price)
+                return $"{Title} on kalliimpi kuin {bk.Title} kirja";
+            
+                return $"{bk.Title} on kalliimpi kuin {Title} kirja";
             
         }
 
@@ -49,7 +49,7 @@ namespace TaskBook
             var result = $"Kirjan nimi:\t{Title}\n" +
                          $"Kirjoittaja:\t{_author}\n" +
                          $"Id:\t\t{Id}\n" +
-                         $"Kappalehinta:\t{Price:F}";
+                         $"Kappalehinta:\t{Price:C}";
                                 
             return result;
         }

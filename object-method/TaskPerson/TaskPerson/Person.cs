@@ -7,45 +7,57 @@ namespace TaskPerson
     class Person
     {
         //Fields
-        public string Name;
-        private int age;
+        private string _name;
+        private int _age;
 
         //Constructor
         public Person()
         {
             Name = "unknown";
-            age = 0;
+            Age = 0;            
         }
 
         public Person(string name, int age)
         {
             Name = name;
-            this.age = age;
+            Age = age;            
+        }
+
+        public string Name
+        {
+            get { return _name; }
+            set { _name = value; }
+        }
+
+        public int Age
+        {
+            get { return _age; }
+            set { _age = value; }
         }
 
         // Methods
         public void GrowOld()
         {
-            this.age++;
+            Age++;
         }
 
         public void GrowOld(int number)
         {
-            this.age = this.age + number;
+            Age += number;
         }
 
         public void PrintPersonInfo()
         {
-            Console.WriteLine($"Nimi: {Name}\n" +
-                              $"Ikä: {this.age}\n" +
+            Console.WriteLine($"Nimi: {name}\n" +
+                              $"Ikä: {Age}\n" +
                               $"Aikuinen: {IsAdult()}");
         }
 
         public bool IsAdult()
         {
-            //return (this.age >= 18);
+            //return (_age >= 18);
 
-            if (this.age >= 18)
+            if (Age >= 18)
                 return true;
             else
                 return false;
@@ -53,7 +65,7 @@ namespace TaskPerson
 
         public int GetAge()
         {
-            return this.age;
+            return Age;
         }
     }
 }

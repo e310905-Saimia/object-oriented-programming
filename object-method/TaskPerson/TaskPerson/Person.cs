@@ -6,23 +6,35 @@ namespace TaskPerson
 {
     class Person
     {
-        //Fields
+
+        //Fields, attributes
         private string _name;
         private int _age;
+        private List<Phone> _phoneNumbers;
 
         //Constructor
         public Person()
         {
             Name = "unknown";
-            Age = 0;            
+            Age = 0;    
+            _phoneNumbers=new List<Phone>();
         }
 
         public Person(string name, int age)
         {
             Name = name;
-            Age = age;            
+            Age = age;
+            _phoneNumbers = new List<Phone>();
         }
 
+        public Person(string name, int age, string phone)
+        {
+            Name = name;
+            Age = age;
+            _phoneNumbers = new List<Phone>();
+            _phoneNumbers.Add(new Phone(phone));
+        }
+        // Properties
         public string Name
         {
             get { return _name; }
@@ -35,7 +47,19 @@ namespace TaskPerson
             set { _age = value; }
         }
 
+        private List<Phone> PhoneNumbers
+        {
+            get { return _phoneNumbers; }
+
+            set { _phoneNumbers = value; }
+        }
+
         // Methods
+        public void AddPhone(string phonenumber)
+        {
+            _phoneNumbers.Add(new Phone(phonenumber));
+            
+        }
         public void GrowOld()
         {
             Age++;
@@ -48,9 +72,12 @@ namespace TaskPerson
 
         public void PrintPersonInfo()
         {
-            Console.WriteLine($"Nimi: {name}\n" +
+            Console.WriteLine($"Nimi: {Name}\n" +
                               $"Ikä: {Age}\n" +
-                              $"Aikuinen: {IsAdult()}");
+                              $"Aikuinen: {IsAdult()}\n" +
+                              $"Puhelin: ");
+
+            GetPhones(GetPhoneNumbers());
         }
 
         public bool IsAdult()
@@ -67,5 +94,35 @@ namespace TaskPerson
         {
             return Age;
         }
+
+        /// <summary>
+        /// ´Get Phonenumbers
+        /// </summary>
+        /// <returns>List of numbers</returns>
+        private List<Phone> GetPhoneNumbers()
+        {
+            return PhoneNumbers;
+        }
+
+        
+        private void GetPhones(List<Phone> phones)
+        {
+            try
+            {
+                foreach (var phone in phones)
+                {
+                    Console.WriteLine(phone.PhoneNumber);
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("##########");
+                //throw;
+            }
+            
+            Console.WriteLine("------------");
+            
+        }
+
     }
 }

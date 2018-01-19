@@ -19,6 +19,9 @@ namespace TaskPerson
         public static string GenerateNewRandomPhone()
         {
             string phone = "040";
+            if (rnd.NextDouble() >= 0.5)
+                phone = "050";
+            
 
             for (int i = 0; i < 7; i++)
             {

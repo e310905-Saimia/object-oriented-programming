@@ -10,7 +10,7 @@ namespace TaskPerson
         {
             //Greate store where all persons are stored
             List<Person> persons = new List<Person>();
-            persons = CreateDb(persons);
+            persons = CreateData(persons);
             /*Phone phone = new Phone();
             
             Person personJouni = new Person();
@@ -56,7 +56,7 @@ namespace TaskPerson
             }
         }
 
-        public static List<Person> CreateDb(List<Person> persons)
+        public static List<Person> CreateData(List<Person> persons)
         {
             
             Person p1 = new Person("Jouni K",50,Utils.GenerateNewRandomPhone());
@@ -64,6 +64,7 @@ namespace TaskPerson
             p1.AddPhone("0407227015");
             p1.AddPhone(Utils.GenerateNewRandomPhone());
             persons.Add(p1);
+
             Person p2 = new Person("Mirja K", 40, Utils.GenerateNewRandomPhone());
             p2.AddPhone("0400755269");
             persons.Add(p2);

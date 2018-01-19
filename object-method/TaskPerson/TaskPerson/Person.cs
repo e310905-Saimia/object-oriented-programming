@@ -6,12 +6,13 @@ namespace TaskPerson
 {
     class Person
     {
-
+       
         //Fields, attributes
         private string _name;
         private int _age;
         private List<Phone> _phoneNumbers;
 
+        
         //Constructor
         public Person()
         {
@@ -77,7 +78,7 @@ namespace TaskPerson
                               $"Aikuinen: {IsAdult()}\n" +
                               $"Puhelin: ");
 
-            GetPhones(GetPhoneNumbers());
+            GetPhones(PhoneNumbers);
         }
 
         public bool IsAdult()
@@ -94,16 +95,7 @@ namespace TaskPerson
         {
             return Age;
         }
-
-        /// <summary>
-        /// ´Get Phonenumbers
-        /// </summary>
-        /// <returns>List of numbers</returns>
-        private List<Phone> GetPhoneNumbers()
-        {
-            return PhoneNumbers;
-        }
-
+        
         
         private void GetPhones(List<Phone> phones)
         {

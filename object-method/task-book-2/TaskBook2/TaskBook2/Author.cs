@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using TaskBook2;
 
-namespace TaskBook2
+
+namespace Literature
 {
     class Author
     {

@@ -21,6 +21,9 @@ namespace TaskBook2
             }
             
             Console.WriteLine(books[1].Author);
+
+            Author author = new Author("Väinö XXX", "12.12.1934", books[1]);
+            author.PrintData();
         }
 
         public static Book[] GreateData(Book[] books)

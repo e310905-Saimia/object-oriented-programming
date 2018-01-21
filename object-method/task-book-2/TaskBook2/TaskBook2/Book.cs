@@ -10,7 +10,7 @@ namespace TaskBook2
     class Book
     {
         private string _name;
-        private string _author;
+        private readonly string _author;
         private string _publisher;
         private double _price;
         private static string _category;
@@ -21,7 +21,7 @@ namespace TaskBook2
         public Book()
         {
             Name = "unknown";
-            Author = "unknown";
+            _author = "unknown";
             Publisher = "unknown";
             Price = 0;
             _category = "unknown";
@@ -30,7 +30,7 @@ namespace TaskBook2
         public Book(string name, string author, string publisher, double price, string category)
         {
             Name = name;
-            Author = author;
+            _author = author;
             Publisher = publisher;
             Price = price;
             _category = category;
@@ -49,7 +49,7 @@ namespace TaskBook2
         public string Author
         {
             get { return _author; }
-            set { _author = value; }
+            //set { _author = value; }
         }
 
         public string Publisher

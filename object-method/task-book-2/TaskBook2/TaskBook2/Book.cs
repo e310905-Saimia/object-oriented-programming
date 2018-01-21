@@ -61,7 +61,13 @@ namespace TaskBook2
         public double Price
         {
             get { return _price; }
-            set { _price = value; }
+            set
+            {
+                if (value > 30)
+                    _price = value * 0.9;
+                else
+                    _price = value;
+            }
         }
 
         public static string Category

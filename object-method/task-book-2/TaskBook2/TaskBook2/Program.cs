@@ -20,6 +20,7 @@ namespace TaskBook2
                 books[i].GetBook("Tuntematon sotilas");
             }
             
+            Console.WriteLine(books[1].Author);
         }
 
         public static Book[] GreateData(Book[] books)

@@ -76,21 +76,33 @@ namespace TaskBook2
         {
             if (Name == name)
             {
-                Console.WriteLine($"Kirja: {Name}\n" +
+                Console.WriteLine($"Kirja löytyi!\n" +
+                                  $"---------------------\n" +
+                                  $"Kirja: {Name}\n" +
                                   $"Kijailija: {Author}\n" +
                                   $"Julkaisija: {Publisher}\n" +
                                   $"Hinta: {Price}\n" +
-                                  $"----------------------");
+                                  $"----------------------\n");
             }
             else
             {
-                Console.WriteLine($"{name} kirjaa ei löydy!");
+                Console.WriteLine($"{name} kirjaa ei löydy!\n" +
+                                  $"----------------------\n");
             }
         }
 
         public static void ChangeCategory(string category)
         {
             _category = category;
+        }
+
+        public override string ToString()
+        {
+            return ($"Kirja: {Name}\n" +
+                    $"Kijailija: {Author}\n" +
+                    $"Julkaisija: {Publisher}\n" +
+                    $"Hinta: {Price}\n" +
+                    $"----------------------\n");
         }
     }
 }

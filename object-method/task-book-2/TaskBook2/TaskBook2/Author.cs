@@ -21,10 +21,13 @@ namespace Literature
 
         public void PrintData()
         {
-            Console.WriteLine($"Kirjailija: {_name}\n" +
+            Console.WriteLine($"===================\n" +
+                              $"Kirjailija: {_name}\n" +
                               $"Syntymäpäivä: {_bithday}\n" +
-                              $"Kirjat: ");
-            _book.GetBook("Tuntematon sotilas");
+                              $"Kirjat:\n" +
+                              $"===================\n" +
+                              $"{_book.ToString()}");
+            
         }
     }
 }

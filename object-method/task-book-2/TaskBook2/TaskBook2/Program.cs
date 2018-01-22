@@ -8,22 +8,23 @@ namespace TaskBook2
     {
         static void Main(string[] args)
         {
-            Book[] books = new Book[5];
-            GreateData(books);
+            Book book1 = new Book("Häräntappo ase", "Anna-Leena Härkönen", "Otava", 10, "Draama");
+
             Console.WriteLine("Book luokan testeri!");
             Console.WriteLine($"Kategoria nyt: {Book.Category}");
-            Book.ChangeCategory("Sota");
+            Book.ChangeCategory("Huumori");
             Console.WriteLine($"Kategoria nyt: {Book.Category}");
 
+            Book book2 = new Book("Tuntematon sotilas", "Väinö Linna", "Otava", 100, "Sota");
 
-            for (int i = 0; i < books.Length; i++)
-            {
-                books[i].GetBook("Tuntematon sotilas");
-            }
-            
-            Console.WriteLine(books[1].Author);
 
-            Author author = new Author("Väinö XXX", "12.12.1934", books[1]);
+            book1.GetBook("Tuntematon sotilas");
+            book2.GetBook("Tuntematon sotilas");
+
+
+            Console.WriteLine(book1.Author);
+
+            Author author = new Author("Väinö XXX", "12.12.1934", book2);
             author.PrintData();
         }
 

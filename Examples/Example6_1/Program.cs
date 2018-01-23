@@ -24,7 +24,7 @@ namespace Example6_1
             //Tässä kutsutaan staattinen metodi AutojenLukumaara() 
             //suoraan luokan nimen kautta.
             Auto.AutojenLukumaara();
-
+            
             //Tässä luodaan auto3-olio kopiointimuodostimella.
             Auto auto3 = new Auto(auto2);
 

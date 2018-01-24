@@ -42,7 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Esimerkki6-8-1.cs" />
+    <Compile Include="Esimerkki6-8-2.cs" />
+    <Compile Include="Esimerkki6-8-3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

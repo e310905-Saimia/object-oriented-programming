@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Sovellus.Kayttoliittyma;
 
 namespace Example6_7
 {
@@ -15,9 +15,8 @@ namespace Example6_7
             //Sovellus.Kayttoliittyma.Asiakas-luokasta. Huomaa, 
             //että luokan nimi joudutaan merkitsemään 
             //nimiavaruuksien kautta. 
-
-            Sovellus.Kayttoliittyma.Asiakas asiakas = new
-                Sovellus.Kayttoliittyma.Asiakas("Sara");
+            
+            Asiakas asiakas = new Asiakas("Sara");
 
             Console.WriteLine("\nSovellus.Kayttoliittyma.Asiakas.TarkistaAsiakas()-metodin tuloste:");
 

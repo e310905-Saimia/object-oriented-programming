@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{55240FD3-4F73-4419-8BBD-D295E2840836}</ProjectGuid>
+    <ProjectGuid>{B0E33FF8-DDDF-4A7D-ACF3-8AE7031FD224}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Example7_1</RootNamespace>
-    <AssemblyName>Example7_1</AssemblyName>
+    <RootNamespace>Example7_2</RootNamespace>
+    <AssemblyName>Example7_2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,13 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Esimerkki7-1.cs" />
+    <Compile Include="Esimerkki7-2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

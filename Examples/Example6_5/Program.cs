@@ -29,7 +29,7 @@ namespace Example6_5
             //seuraavalla lauseella: new Johtaja().
 
             Firma tokaFirma = new Firma("Easy Money", 500000, new
-                Johtaja());
+                Johtaja("XXX",5000));
 
             //Tässä kutsutaan tokaFirma-olion FirmanTiedot()-metodi.
             tokaFirma.FirmanTiedot();

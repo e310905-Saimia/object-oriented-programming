@@ -9,10 +9,11 @@ namespace VehileXXX
     class Vehicle
     {
         protected string Type;
-        protected string Brand;
+        private string _brand;
         protected int Year;
         protected double Price;
 
+        public string Brand { get => _brand; set => _brand = value; }
 
         public Vehicle(string type, string brand, int year, double price)
         {
@@ -22,9 +23,12 @@ namespace VehileXXX
             Price = price;
         }
 
-        public virtual bool Equals(object obj)
+        public override bool Equals(object obj)
         {
-            return base.Equals(obj);
+            if (Year >= ((Vehicle) obj).Year)
+                return false;
+            else
+                return true;
         }
 
         public virtual string PrintData()
@@ -46,10 +50,11 @@ namespace VehileXXX
     class Car : Vehicle
     {
         //Fields
-        protected double Engine;
+        private double _engine;
         protected string Model;
         protected int Doors;
 
+        //Constructor
        public Car(string type, string brand, int year, double price, double engine, string model, int doors) : base(type, brand, year, price)
         {
             Engine = engine;
@@ -57,9 +62,20 @@ namespace VehileXXX
             Doors = doors;
         }
 
+        //Properties
+        public double Engine
+        {
+            get { return _engine; }
+            set { _engine = value; }
+        }
+
+        //Methods
         public override bool Equals(object obj)
         {
-            return base.Equals(obj);
+            if (Engine >= ((Car) obj).Engine)
+                return true;
+            else            
+                return false;            
         }
 
         public override string PrintData()

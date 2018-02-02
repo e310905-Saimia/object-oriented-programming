@@ -26,7 +26,18 @@ namespace TaskBook2
 
             Author author = new Author("Väinö XXX", "12.12.1934", book2);
             author.PrintData();
+
+            Author author2 = new Author("Pekka", "1.1.1990", new Book("Mielensä pahoittaja","Pekka Pouta","VSOY", 15,"Huumori"));
+            author2.PrintData();
         }
+
+
+
+
+
+
+
+
 
         public static Book[] GreateData(Book[] books)
         {            

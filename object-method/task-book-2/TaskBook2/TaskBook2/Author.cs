@@ -9,13 +9,13 @@ namespace Literature
     class Author
     {
         private string _name;
-        private string _bithday;
+        private string _birthday;
         private Book _book;
 
-        public Author(string name, string bithday, Book book)
+        public Author(string name, string birthday, Book book)
         {
             _name = name;
-            _bithday = bithday;
+            _birthday = birthday;
             _book = book;
         }
 
@@ -23,8 +23,8 @@ namespace Literature
         {
             Console.WriteLine($"===================\n" +
                               $"Kirjailija: {_name}\n" +
-                              $"Syntymäpäivä: {_bithday}\n" +
-                              $"Kirjat:\n" +
+                              $"Syntymäpäivä: {_birthday}\n" +
+                              $"Kirja:\n" +
                               $"===================\n" +
                               $"{_book.ToString()}");
             

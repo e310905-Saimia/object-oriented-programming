@@ -59,10 +59,9 @@ namespace TaskBook2
             get { return _price; }
             set
             {
+                _price = value;
                 if (value > 30)
-                    _price = value * 0.9;
-                else
-                    _price = value;
+                    _price = value * 0.9;                    
             }
         }
 

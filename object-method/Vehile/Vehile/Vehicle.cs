@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VehileXXX
 {
-    class Vehicle
+    abstract class Vehicle
     {
         protected string Type;
         private string _brand;
@@ -55,12 +55,19 @@ namespace VehileXXX
         protected int Doors;
 
         //Constructor
-       public Car(string type, string brand, int year, double price, double engine, string model, int doors) : base(type, brand, year, price)
+        // default contructor added for abstract class
+        public Car(string type, string brand, int year, double price) : base(type, brand, year, price)
+        {
+        }
+
+        public Car(string type, string brand, int year, double price, double engine, string model, int doors) : base(type, brand, year, price)
         {
             Engine = engine;
             Model = model;
             Doors = doors;
         }
+
+        
 
         //Properties
         public double Engine

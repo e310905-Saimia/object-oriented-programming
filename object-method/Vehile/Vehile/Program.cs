@@ -33,7 +33,13 @@ namespace Vehile
             Console.WriteLine($"Onko {c2.Brand} moottori suurempi kuin {c1.Brand}? " +
                               $"Vastaus: {c2.Equals(c1)}");
 
-            
+            Lorry lorry_1 = new Lorry("Kuorma-auto", "Volvo",2000,45000,5000,0.2);
+            Console.WriteLine($"{lorry_1.PrintData()}");
+
+            Car c3 = (Car) lorry_1;
+            Console.WriteLine(c3.PrintData());
+
+
         }
     }
 }

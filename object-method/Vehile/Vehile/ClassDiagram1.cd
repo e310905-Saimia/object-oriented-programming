@@ -8,7 +8,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="VehileXXX.Car">
-    <Position X="5.5" Y="0.5" Width="1.5" />
+    <Position X="4.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEgAAAAAAgAAAAAAAIBAgBAAAAAAA=</HashCode>
       <FileName>Vehicle.cs</FileName>

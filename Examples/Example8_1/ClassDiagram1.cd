@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Robotti">
-    <Position X="2" Y="0.75" Width="1.5" />
+    <Position X="2" Y="0.75" Width="2" />
     <TypeIdentifier>
       <HashCode>BAAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAQAAAAAA=</HashCode>
       <FileName>Esimerkki8-1.cs</FileName>
@@ -9,7 +9,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Interface Name="IRobotti">
-    <Position X="6" Y="0.75" Width="1.5" />
+    <Position X="6" Y="0.75" Width="2" />
     <TypeIdentifier>
       <HashCode>BAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAQAAAAAA=</HashCode>
       <FileName>Esimerkki8-1.cs</FileName>

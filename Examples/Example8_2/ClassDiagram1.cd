@@ -1,32 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Robotti" BaseTypeListCollapsed="true">
-    <Position X="0.75" Y="1.25" Width="1.5" />
+  <Class Name="Example8_2.Robotti">
+    <Position X="0.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAAGAAAABAAAAAAAADCAgAAAACAAAYAAAAAQAAAAAA=</HashCode>
-      <FileName>Esimerkki8-2.cs</FileName>
+      <FileName>Robotti.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
+    <Lollipop Position="0.2" />
   </Class>
-  <Interface Name="IRobotti">
-    <Position X="3.25" Y="3" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>BAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAQAAAAAA=</HashCode>
-      <FileName>Esimerkki8-2.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="IAlustus">
-    <Position X="3.25" Y="1.5" Width="1.5" />
+  <Interface Name="Example8_2.IAlusta">
+    <Position X="3.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAACAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Esimerkki8-2.cs</FileName>
+      <FileName>IAlusta.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="IMatka">
-    <Position X="5" Y="1.5" Width="1.5" />
+  <Interface Name="Example8_2.IMatka">
+    <Position X="5.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Esimerkki8-2.cs</FileName>
+      <FileName>IMatka.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Example8_2.IRobotti">
+    <Position X="3.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>IRobotti.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

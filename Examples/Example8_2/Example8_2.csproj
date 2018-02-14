@@ -43,8 +43,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Esimerkki8-2.cs" />
+    <Compile Include="IAlusta.cs" />
+    <Compile Include="IMatka.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IRobotti.cs" />
+    <Compile Include="Robotti.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

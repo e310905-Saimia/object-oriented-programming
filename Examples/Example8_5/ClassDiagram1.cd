@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Robotti">
-    <Position X="8" Y="1" Width="2" />
+    <Position X="7.75" Y="0.5" Width="2" />
     <TypeIdentifier>
       <HashCode>BAAACAAAAQAAAAAAAAACAgAAAACAAAAAAAAAQAAAAAA=</HashCode>
       <FileName>Esimerkki8-5.cs</FileName>

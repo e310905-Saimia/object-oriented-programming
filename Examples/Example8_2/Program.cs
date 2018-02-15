@@ -14,8 +14,8 @@ namespace Example8_2
             Robotti robotti = new Robotti();
 
             //Seuraavassa alustetaan robotti-olio.
-            robotti.AsetaAloitusPiste(10, 5);
-            robotti.AsetaLopetusPiste(54, 98);
+            robotti.AsetaAloitusPiste(5, 8);
+            robotti.AsetaLopetusPiste(56, 98);
 
             //Tässä kutsutaan RobottiToiminnassa –property.
             Console.WriteLine("Robotti on toiminnassa: " +

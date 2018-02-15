@@ -12,7 +12,7 @@ namespace Example8_1
         {
             //Tässä luodaan robotti-olio.
             Robotti robotti = new Robotti();
-
+            
             //Tässä kutsutaan RobottiToiminnassa-property.
             Console.WriteLine("Robotti toiminnassa: " +
                               robotti.RobottiToiminnassa);

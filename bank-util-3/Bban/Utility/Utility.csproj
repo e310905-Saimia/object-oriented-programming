@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <RootNamespace>DigiTrade.Utility.Bank</RootNamespace>
+    <AssemblyName>BankUtility</AssemblyName>
+    <Version>1.0.3</Version>
+  </PropertyGroup>
+
+</Project>

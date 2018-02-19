@@ -31,15 +31,15 @@ namespace VehileXXX
                 return true;
         }
 
-        public virtual string PrintData()
-        {
-            return $"-------------\n" +
-                   $"Tyyppi: {Type}\n" +
-                   $"Merkki: {Brand}\n" +
-                   $"Vuosimalli: {Year}\n" +
-                   $"Hinta: {Price}\n" +
-                   $"==============\n";
-        }
+        abstract public string PrintData();
+        //{
+        //    return $"-------------\n" +
+        //           $"Tyyppi: {Type}\n" +
+        //           $"Merkki: {Brand}\n" +
+        //           $"Vuosimalli: {Year}\n" +
+        //           $"Hinta: {Price}\n" +
+        //           $"==============\n";
+        //}
 
         public override string ToString()
         {
@@ -87,7 +87,8 @@ namespace VehileXXX
 
         public override string PrintData()
         {
-            return $"{base.PrintData()}\n" +
+            //$"{base.PrintData()}\n" +
+            return 
                    $"Moottori: {Engine}\n" +
                    $"Malli: {Model}\n" +
                    $"Ovien määrä: {Doors}\n" +

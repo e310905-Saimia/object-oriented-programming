@@ -14,5 +14,12 @@
       <FileName>Vehicle.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="Vehile.Lorry">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAABAAAAAAIAAAAAAgAAQAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lorry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

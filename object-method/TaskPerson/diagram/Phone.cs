@@ -7,7 +7,6 @@ namespace TaskPerson
     class Phone
     {
         private string _phoneNumber;
-        private string _phoneType;
 
         public Phone()
         {
@@ -16,9 +15,7 @@ namespace TaskPerson
         public Phone(string phoneNumber)
         {
             _phoneNumber = phoneNumber;
-            PhoneType = Utils.GetPhotoType();
         }
-
         public string PhoneNumber
         {
             get { return _phoneNumber; }
@@ -29,12 +26,6 @@ namespace TaskPerson
                 else
                     _phoneNumber = value;
             }
-        }
-
-        public string PhoneType
-        {
-            get { return _phoneType; }
-            set { _phoneType = value; }
         }
 
 

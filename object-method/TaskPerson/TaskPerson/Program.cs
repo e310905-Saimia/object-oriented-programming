@@ -66,8 +66,9 @@ namespace TaskPerson
             persons.Add(p1);
 
             Person p2 = new Person("Mirja K", 40, Utils.GenerateNewRandomPhone());
-            p2.AddPhone("0400755269");
+            p2.AddPhone("0400755269");         
             persons.Add(p2);
+            
 
             Person p3 = new Person("Sanni K", 9);
             p3.AddPhone("123123123");

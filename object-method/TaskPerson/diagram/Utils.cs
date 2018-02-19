@@ -30,19 +30,5 @@ namespace TaskPerson
             
             return phone;
         }
-
-        public static string GetPhotoType()
-        {
-            if (rnd.NextDouble() > 0.5)
-                return "WORK";
-            else            
-                return "HOME";            
-        }
-
-        private enum PhoneType
-        {
-            WORK,
-            HOME            
-        };
     }
 }

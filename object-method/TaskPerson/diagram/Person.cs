@@ -6,19 +6,19 @@ namespace TaskPerson
 {
     class Person
     {
-
+       
         //Fields, attributes
         private string _name;
         private int _age;
         private List<Phone> _phoneNumbers;
 
-
+        
         //Constructor
         public Person()
         {
             Name = "unknown";
-            Age = 0;
-            _phoneNumbers = new List<Phone>();
+            Age = 0;    
+            _phoneNumbers=new List<Phone>();
         }
 
         public Person(string name, int age)
@@ -59,7 +59,7 @@ namespace TaskPerson
         public void AddPhone(string phonenumber)
         {
             _phoneNumbers.Add(new Phone(phonenumber));
-
+            
         }
         public void GrowOld()
         {
@@ -79,7 +79,7 @@ namespace TaskPerson
                               $"Puhelin: ");
 
             GetPhones(PhoneNumbers);
-        }       
+        }
 
         public bool IsAdult()
         {
@@ -95,15 +95,15 @@ namespace TaskPerson
         {
             return Age;
         }
-
-
+        
+        
         private void GetPhones(List<Phone> phones)
         {
             try
             {
                 foreach (var phone in phones)
                 {
-                    Console.WriteLine($"{phone.PhoneNumber}, {phone.PhoneType}");
+                    Console.WriteLine(phone.PhoneNumber);
                 }
             }
             catch (Exception e)
@@ -111,9 +111,9 @@ namespace TaskPerson
                 Console.WriteLine("##########");
                 //throw;
             }
-
+            
             Console.WriteLine("------------");
-
+            
         }
 
     }

@@ -15,7 +15,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="TaskPerson.Utils">
-    <Position X="8.25" Y="0.5" Width="2" />
+    <Position X="8.25" Y="0.5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAEAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Utils.cs</FileName>

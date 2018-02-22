@@ -97,20 +97,20 @@ namespace TaskPerson
         }
         
         
-        private void GetPhones(List<Phone> phones)
+        private void GetPhones(List<Phone> lstPhones)
         {
-            try
-            {
-                foreach (var phone in phones)
+            //try
+            //{
+                foreach (var phone in lstPhones)
                 {
                     Console.WriteLine(phone.PhoneNumber);
                 }
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("##########");
-                //throw;
-            }
+            //}
+            //catch (Exception e)
+            //{
+            //    Console.WriteLine("##########");
+            //    //throw;
+            //}
             
             Console.WriteLine("------------");
             

@@ -11,7 +11,16 @@ namespace TaskPerson
     class Utils
     {
         private static Random rnd = new Random();
+        private static string _separator= new string('-', 100);
 
+        public static string Separator { get => _separator;
+            // set => _separator = new string(char.Parse(value),100);
+        }
+
+        public static void SetSeparator(char chr, int count)
+        {
+            _separator = new string(chr, count);
+        }
         /// <summary>
         /// Generate new random phonenumber
         /// </summary>

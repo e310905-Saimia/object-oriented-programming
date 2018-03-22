@@ -62,6 +62,14 @@ namespace TaskPerson
 
             PrintAll(SortPersons(persons));
 
+            //string s = new string('-',100);
+            //Console.WriteLine(new string('-', 100));
+            //Utils.Separator = "#";
+            Console.WriteLine(Utils.Separator);
+
+            Utils.SetSeparator('#',50);
+            Console.WriteLine(Utils.Separator);
+
             Console.ReadKey();
 
         }

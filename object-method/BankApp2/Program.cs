@@ -25,9 +25,10 @@ namespace BankApp2
                     day = rnd.Next(1, 29),
                     month = rnd.Next(1, 13),
                     year = rnd.Next(2016, 2019);
-                double s = rnd.NextDouble() * 2000 - 900;
+                double saldo = rnd.NextDouble() * 2000 - 900;
 
-                bank.AddTransactionForCustomer(customers[c].AccountNumber, new Transaction(s, new DateTime(year, month, day)));
+                bank.AddTransactionForCustomer(customers[c].AccountNumber, 
+                    new Transaction(saldo, new DateTime(year, month, day)));
             }
 
 
@@ -57,7 +58,8 @@ namespace BankApp2
 
             foreach (var cust in customers)
             {
-                PrintTransactions(bank.GetTransactionsForCustomerForTimeSpan(cust.AccountNumber, startTime, endTime), cust);                
+                PrintTransactions(bank.GetTransactionsForCustomerForTimeSpan(cust.AccountNumber, 
+                    startTime, endTime), cust);                
             }
             Console.WriteLine("<Enter> lopettaa!");
             Console.ReadLine();
